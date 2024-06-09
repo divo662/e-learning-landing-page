@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+      <!--=============== SWIPER CSS ===============-->
+      <link rel="stylesheet" href="">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="style.css">
+
+      <title>Booktify</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav_container">
+            <a href="#" class="nav__logo">
+                <p>Skillex.</p>
+            </a>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">
+                            <span>Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#featured" class="nav__link">
+                            <span>Course</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#discount" class="nav__link">
+                            <span>Prices</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#new" class="nav__link">
+                            <span>About</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#testimonial" class="nav__link">
+                            <span>Testimonial</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+               <!-- Close button -->
+               <div class="nav__close" id="nav-close">
+                <i class="ri-close-large-line"></i>
+            </div>
+
+            <div class="nav__action_main">
+                <i class="ri-search-line"></i>
+                <i class="ri-account-circle-line"></i>
+            </div>
+        <div class="nav__action">
+            <i class="ri-menu-line" id="nav-toggle"></i>
+            <i class="ri-search-line"></i>
+            <i class="ri-account-circle-line"></i>
+        </div>
+    
+         </nav>
+      </header>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="landing-section" id="home">
+            <div class="landing-section-main-container">
+                <ul class="landing-list">
+                    <li>
+                        <p>
+                            Watch. <br> 
+                            Learn. <br>
+                            Grow.    
+                        </p>
+                    </li>
+                    <li>
+                         <ul class="newletter-list">
+        <li>
+            <input type="text" class="mail" placeholder="Find your passion" name="email" required>
+        </li>
+        <li>
+            <input type="submit" value="Go" class="subscribe">
+        </li>
+    
+    </ul>
+                    </li>
+                    <li>
+                        <ul class="achieved-list">
+                            <li>
+                                <h1>94K+</h1>
+                                <p>happy students</p>
+                            </li>
+                            <li>
+                                <h1>14K+</h1>
+                                <p>Active students</p>
+                            </li>
+                            <li>
+                                <h1>4K+</h1>
+                                <p>Classes</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="sliding-container-list">
+                    <li>
+                        <div class="sliding-container">
+                            <img src="img/lect1.jpg" alt="">
+                            <div class="text-container">
+                                <span class="vertical-text">Cooking</span>
+                            </div>
+                            <span class="hover-text">Cooking</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sliding-container">
+                            <img src="img/lect2.jpg" alt="">
+                            <div class="text-container">
+                                <span class="vertical-text">Writing</span>
+                            </div>
+                            <span class="hover-text">Writing</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sliding-container">
+                            <img src="img/lect5.jpg" alt="">
+                            <div class="text-container">
+                                <span class="vertical-text">Business</span>
+                            </div>
+                            <span class="hover-text">Business</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sliding-container">
+                            <img src="img/lect3.jpg" alt="">
+                            <div class="text-container">
+                                <span class="vertical-text">Language</span>
+                            </div>
+                            <span class="hover-text">Language</span>
+                        </div>
+                    </li>
+                </ul>
+        
+            </div>         
+         </section>
+
+      </main>
+      <script>
+        const navMenu = document.getElementById('nav-menu');
+        const navToggle = document.getElementById('nav-toggle');
+        const navClose = document.getElementById('nav-close');
+    
+        if (navToggle) {
+            navToggle.addEventListener('click', () => {
+                navMenu.classList.add('show-menu');
+            });
+        }
+    
+        if (navClose) {
+            navClose.addEventListener('click', () => {
+                navMenu.classList.remove('show-menu');
+            });
+        }
+    </script>
+
+   </body>
+</html>
